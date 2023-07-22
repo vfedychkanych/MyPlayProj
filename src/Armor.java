@@ -7,8 +7,22 @@ public class Armor {
     public Armor notHaveArmor() {
         return new Armor(ArmorNames.NOTHING, 1.0, 0, 1);
     }
-//    public Armor wearingArmorToHero(Hero hero) {
-//
+    public Hero wearingArmorToHero(Hero hero, Armor armor) throws LevelException {
+        if (armor.getLevel() > hero.getLevel().getLevel()) {
+            throw new LevelException("Твій рівень недостатньо високий для цього предмету" + "\n" +
+                    "Твій рівень: " + hero.getLevel() + " Рівень предмету: " + armor.level);
+        }
+        hero.setArmor(armor);
+        return hero;
+    }
+
+//    public Hero wearingArmorToHero(Hero hero, Armor armor) throws LevelException {
+//        if (armor.getLevel() > hero.getLevel().getLevel()) {
+//            throw new LevelException("Твій рівень недостатньо високий для цього предмету" + "\n" +
+//                    "Твій рівень: " + hero.getLevel() + " Рівень предмету: " + armor.level);
+//        }
+//        hero.setArmor(armor);
+//        return hero;
 //    }
 
     public Armor() {
