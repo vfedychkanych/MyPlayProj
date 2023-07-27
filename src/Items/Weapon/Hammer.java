@@ -1,4 +1,5 @@
-package Inventory;
+package Items.Weapon;
+
 public class Hammer implements Weapon {
     public double attack;
     public int lvl;

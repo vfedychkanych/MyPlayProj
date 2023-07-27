@@ -1,20 +1,21 @@
-package Inventory;
-public class Baculus implements Weapon {
+package Items.Weapon;
+
+public class Axe implements Weapon {
     public double attack;
     public int lvl;
     public double hp;
     public double attCof = 1.5;
     public double hpCof = 1.2;
 
-    public Baculus(int level) {
+    public Axe(int level) {
         this.lvl = level;
         if (level == 0) {
             this.hp = 100;
-            this.attack = 3.0;
+            this.attack = 2.0;
         }
         else {
             this.hp = 100;
-            this.attack = 3.0;
+            this.attack = 2.0;
             for (int i = 0; i < level; i++) {
                 this.hp = this.hp * this.hpCof;
                 this.attack = this.attack * this.attCof;

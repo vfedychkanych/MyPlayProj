@@ -1,4 +1,4 @@
-package Inventory;
+package Items;
 
 public interface Inventory {
 }
