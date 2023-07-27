@@ -5,7 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67a3b275-abd1-4c7b-8928-dd9e619a3667" name="Changes" comment="V: Armor">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Items/UsableItem/AttackPoison.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Items/UsableItem/DefencePoison.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Items/UsableItem/HealPoison.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Items/UsableItem/UsableItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_07_2023_1_27__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_07_2023_1_27__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_07_2023_1_07__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_07_2023_1_07__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_07_2023_1_13__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_07_2023_1_13__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_07_2023_1_36__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_07_2023_1_36__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Inventory/Axe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Items/Weapon/Axe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Inventory/Baculus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Items/Weapon/Baculus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Inventory/Hammer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Items/Weapon/Hammer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Inventory/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Items/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Inventory/Sword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Items/Weapon/Sword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Inventory/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Items/Weapon/Weapon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Perso/perso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Perso/perso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plan/projectDiagram.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/src/plan/projectDiagram.drawio" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +33,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -48,7 +66,8 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "firstday",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "ForProdution",
     "settings.editor.selected.configurable": "preferences.updates"
   }
 }]]></component>

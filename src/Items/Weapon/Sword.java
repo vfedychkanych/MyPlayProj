@@ -1,4 +1,5 @@
-package Inventory;
+package Items.Weapon;
+
 public class Sword implements Weapon {
     public double attack;
     public int lvl;
