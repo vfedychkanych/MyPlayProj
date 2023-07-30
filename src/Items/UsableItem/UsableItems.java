@@ -1,4 +1,9 @@
 package Items.UsableItem;
 
-public interface UsableItems {
+import Items.Inventory;
+
+public interface UsableItems extends Inventory {
+
+    @Override
+    void print();
 }

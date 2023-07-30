@@ -1,14 +1,21 @@
 package Items.UsableItem;
 
-public class AttackPoison {
+import Items.Inventory;
+
+import java.util.ArrayList;
+
+public class AttackPoison implements UsableItems {
+    private String name = "Attack";
     public double toAtk;
     public int coolDown = 20;
 
     public int activeTime = 15;
+    //--------------------------------------------------------------------------------------
 
-    public AttackPoison(double toHeal) {
-        this.toAtk = toHeal;
+    public AttackPoison(double toAtk) {
+        this.toAtk = toAtk;
     }
+    //--------------------------------------------------------------------------------------
 
     public int getActiveTime() {
         return activeTime;
@@ -20,5 +27,16 @@ public class AttackPoison {
 
     public double getToAtk() {
         return toAtk;
+    }
+    //--------------------------------------------------------------------------------------
+
+    public void print(){
+        ArrayList<String> res = new ArrayList<>();
+        res.add(String.valueOf(this.name));
+        res.add("Attacking:" + this.toAtk);
+        res.add("CoolDown:" + this.coolDown);
+        res.add("ActiveTime:" + this.activeTime);
+        System.out.println(res);
+
     }
 }

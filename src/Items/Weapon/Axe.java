@@ -1,11 +1,14 @@
 package Items.Weapon;
 
+import java.util.ArrayList;
+
 public class Axe implements Weapon {
-    public double attack;
-    public int lvl;
-    public double hp;
-    public double attCof = 1.5;
-    public double hpCof = 1.2;
+    private String name = "Axe";
+    private double attack;
+    private int lvl;
+    private double hp;
+    private double attCof = 1.5;
+    private double hpCof = 1.2;
 
     public Axe(int level) {
         this.lvl = level;
@@ -61,5 +64,16 @@ public class Axe implements Weapon {
 
     public double getAttack() {
         return attack;
+    }
+    public void print(){
+        ArrayList<String> res = new ArrayList<>();
+        res.add(String.valueOf(this.name));
+        res.add("level:" + this.lvl);
+        res.add("hp:" + this.hp);
+        res.add("hpCof:" + this.hpCof);
+        res.add("Attack:" + this.attack);
+        res.add("AtkCof:" + this.attCof);
+        System.out.println(res);
+
     }
 }

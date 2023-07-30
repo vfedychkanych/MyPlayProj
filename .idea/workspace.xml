@@ -5,18 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67a3b275-abd1-4c7b-8928-dd9e619a3667" name="Changes" comment="V: Armor">
-      <change afterPath="$PROJECT_DIR$/src/Items/Armor/Armor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Perso/Enemy/Boss.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Perso/Enemy/Enemy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Perso/Player/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Race/Elf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Race/Gnome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Race/Human.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Race/Orc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Race/Race.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_07_2023_1_27__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_07_2023_1_27__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_07_2023_14_39__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_07_2023_14_39__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_07_2023_1_07__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_07_2023_1_07__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_07_2023_1_13__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_07_2023_1_13__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_07_2023_1_36__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_07_2023_1_36__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Perso/perso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Perso/Perso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Items/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Items/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Items/UsableItem/AttackPoison.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Items/UsableItem/AttackPoison.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Items/UsableItem/DefencePoison.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Items/UsableItem/DefencePoison.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Items/UsableItem/HealPoison.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Items/UsableItem/HealPoison.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Items/UsableItem/UsableItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Items/UsableItem/UsableItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Items/Weapon/Axe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Items/Weapon/Axe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Items/Weapon/Baculus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Items/Weapon/Baculus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Items/Weapon/Hammer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Items/Weapon/Hammer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Items/Weapon/Sword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Items/Weapon/Sword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Items/Weapon/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Items/Weapon/Weapon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Perso/Perso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Perso/Perso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Perso/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Perso/Player/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Race/Elf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Race/Elf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Race/Gnome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Race/Gnome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Race/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Race/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Race/Orc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Race/Orc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Race/Race.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Race/Race.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/plan/projectDiagram.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/src/plan/projectDiagram.drawio" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,8 +40,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -61,7 +73,8 @@
     &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;firstday&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;ForProdution&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.updates&quot;
   }
 }</component>
@@ -111,6 +124,21 @@
     </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="ForProdution" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -121,7 +149,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/Ovoitovych" />
+                        <option value="ForProdution" />
                       </list>
                     </value>
                   </entry>
