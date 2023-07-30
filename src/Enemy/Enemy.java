@@ -66,10 +66,20 @@ public class Enemy {
 
     private void autoRace(){
         int randomRace = getRandomNumber(1,4);
-        if(randomRace == 1) { this.race = new Elf();}
-        if(randomRace == 2) { this.race = new Gnome();}
-        if(randomRace == 3) { this.race = new Human();}
-        if(randomRace == 4) { this.race = new Orc();}
+        switch (randomRace) {
+            case 1 -> {
+                this.race = new Elf();
+            }
+            case 2 -> {
+                this.race = new Gnome();;
+            }
+            case 3 -> {
+                this.race = new Human();;
+            }
+            case 4 -> {
+                this.race = new Orc();;
+            }
+        }
     }
 
     private void addToInventory(Inventory obj) {inventory.add(obj);}

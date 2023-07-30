@@ -38,6 +38,5 @@ public class DefencePoison implements UsableItems {
         res.add("CoolDown:" + this.coolDown);
         res.add("ActiveTime:" + this.activeTime);
         System.out.println(res);
-
     }
 }

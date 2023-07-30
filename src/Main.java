@@ -51,19 +51,19 @@ public class Main {
                 System.out.println("Choose Race(Elf(E)/Gnome(G)/Human(H)/Orc(O)): ");
                 String whatRase = myObj.next();
 
-                if (whatRase.equals("E") || whatRase.equals("e")) {
+                if (whatRase.equalsIgnoreCase("e")) {
                     testPlayer = new Player(elf, name);
                     testPlayer.print();
                 }
-                if (whatRase.equals("G") || whatRase.equals("g")) {
+                if (whatRase.equalsIgnoreCase("g")) {
                     testPlayer = new Player(gnome, name);
                     testPlayer.print();
                 }
-                if (whatRase.equals("H") || whatRase.equals("h")) {
+                if (whatRase.equalsIgnoreCase("h")) {
                     testPlayer = new Player(human, name);
                     testPlayer.print();
                 }
-                if (whatRase.equals("O") || whatRase.equals("o")) {
+                if (whatRase.equalsIgnoreCase("o")) {
                     testPlayer = new Player(ork, name);
                     testPlayer.print();
                 }
