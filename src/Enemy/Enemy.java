@@ -8,11 +8,7 @@ import Items.Weapon.Axe;
 import Items.Weapon.Baculus;
 import Items.Weapon.Hammer;
 import Items.Weapon.Sword;
-import Race.Race;
-import Race.Elf;
-import Race.Gnome;
-import Race.Human;
-import Race.Orc;
+import Race.*;
 
 import java.util.ArrayList;
 import java.util.Collection;
