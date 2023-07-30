@@ -57,8 +57,8 @@ public class Main {
                 testPlayer.print();
             }
 
-            for (int i = 0; i < 3; i++) {
-                switch (getRandomNumber(1, 4)) {
+            for (int i = 1; i < 5; i++) {
+                switch (i) {
                     case 1:
                         testPlayer.addToInventory(new Sword(getRandomNumber(1, 10)));
                         break;
@@ -74,8 +74,8 @@ public class Main {
                 }
             }
 
-            for (int i = 0; i < 3; i++) {
-                switch (getRandomNumber(1, 3)) {
+            for (int i = 1; i < 4; i++) {
+                switch (i) {
                     case 1:
                         testPlayer.addToInventory(new HealPoison(getRandomNumber(15, 100)));
                         break;
