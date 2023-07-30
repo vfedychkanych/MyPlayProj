@@ -5,6 +5,7 @@ import Items.Inventory;
 import java.util.ArrayList;
 
 public class AttackPoison implements UsableItems {
+    private int indetifier = 1;
     private String name = "Attack";
     public double toAtk;
     public int coolDown = 20;
@@ -27,6 +28,9 @@ public class AttackPoison implements UsableItems {
 
     public double getToAtk() {
         return toAtk;
+    }
+    public int getIndetifier() {
+        return indetifier;
     }
     //--------------------------------------------------------------------------------------
 

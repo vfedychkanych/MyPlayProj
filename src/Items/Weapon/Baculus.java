@@ -3,14 +3,14 @@ package Items.Weapon;
 import java.util.ArrayList;
 
 public class Baculus implements Weapon {
+    private int indetifier = 0;
     private String name = "Baculus";
-
     private double attack;
     private int lvl;
     private double hp;
     private double attCof = 1.5;
     private double hpCof = 1.2;
-
+    //--------------------------------------------------------------------------------------
     public Baculus(int level) {
         this.lvl = level;
         if (level == 0) {
@@ -26,7 +26,7 @@ public class Baculus implements Weapon {
             }
         }
     }
-
+    //--------------------------------------------------------------------------------------
     public void setHpCof(double hpCof) {
         this.hpCof = hpCof;
     }
@@ -43,12 +43,20 @@ public class Baculus implements Weapon {
         this.lvl = lvl;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public void setAttack(double attack) {
         this.attack = attack;
     }
-
+    //--------------------------------------------------------------------------------------
     public double getHpCof() {
         return hpCof;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public double getAttCof() {
@@ -66,6 +74,10 @@ public class Baculus implements Weapon {
     public double getAttack() {
         return attack;
     }
+    public int getIndetifier() {
+        return indetifier;
+    }
+    //--------------------------------------------------------------------------------------
     public void print(){
         ArrayList<String> res = new ArrayList<>();
         res.add(String.valueOf(this.name));

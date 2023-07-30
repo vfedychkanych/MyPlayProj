@@ -1,4 +1,4 @@
-package Perso.Enemy;
+package Enemy;
 
 public class Boss extends Enemy{
     private double attack;

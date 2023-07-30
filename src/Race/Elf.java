@@ -1,7 +1,8 @@
 package Race;
 
-public class Elf implements Race{
+public class Elf implements Race {
     private String raceName = "Elf";
+    private String weaponForRace = "Baculus";
     private double hp = 70.00;
     private double hpForLvl = 1.7;
     private double attack = 2.0;
@@ -9,11 +10,23 @@ public class Elf implements Race{
     private double defense = 1.0;
     private double defForLvl = 2.0;
 
+    private double CofForRace = 1.3;
+
+    //--------------------------------------------------------------------------------------
     public Elf() {
     }
 
+    //--------------------------------------------------------------------------------------
     public double getHp() {
         return hp;
+    }
+
+    public String getWeaponForRace() {
+        return weaponForRace;
+    }
+
+    public double getCofForRace() {
+        return CofForRace;
     }
 
     public double getHpForLvl() {
@@ -35,6 +48,7 @@ public class Elf implements Race{
     public double getDefForLvl() {
         return defForLvl;
     }
+
     public String getRaceName() {
         return raceName;
     }

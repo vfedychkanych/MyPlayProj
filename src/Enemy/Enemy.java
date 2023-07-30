@@ -1,9 +1,8 @@
-package Perso.Enemy;
+package Enemy;
 
-import Perso.Perso;
 import Race.Race;
 
-public class Enemy extends Perso {
+public class Enemy {
     private Race race;
     private int level;
     private double hp;

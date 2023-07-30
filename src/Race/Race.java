@@ -2,12 +2,14 @@ package Race;
 
 public interface Race {
     String raceName = "";
+     String weaponForRace = "";
      double hp = 0.00;
      double hpForLvl = 0.0;
      double attack = 0.0;
      double attForLvl = 0.0;
      double defense = 0.0;
      double defForLvl = 0.0;
+    double CofForRace = 0.0;
     default double getHp() {
         return hp;
     }
@@ -33,5 +35,13 @@ public interface Race {
     }
     default String getRaceName(){
         return raceName;
+    }
+
+    default String getWeaponForRace() {
+        return weaponForRace;
+    }
+
+    default double getCofForRace() {
+        return CofForRace;
     }
 }

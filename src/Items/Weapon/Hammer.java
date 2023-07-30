@@ -3,6 +3,7 @@ package Items.Weapon;
 import java.util.ArrayList;
 
 public class Hammer implements Weapon {
+    private int indetifier = 0;
     private String name = "Hammer";
     private double attack;
 
@@ -10,7 +11,7 @@ public class Hammer implements Weapon {
     private double hp;
     private double attCof = 1.5;
     private double hpCof = 1.2;
-
+    //--------------------------------------------------------------------------------------
     public Hammer(int level) {
         this.lvl = level;
         if (level == 0) {
@@ -26,9 +27,13 @@ public class Hammer implements Weapon {
             }
         }
     }
-
+    //--------------------------------------------------------------------------------------
     public void setHpCof(double hpCof) {
         this.hpCof = hpCof;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setAttCof(double attCof) {
@@ -46,9 +51,14 @@ public class Hammer implements Weapon {
     public void setAttack(double attack) {
         this.attack = attack;
     }
-
+    //--------------------------------------------------------------------------------------
     public double getHpCof() {
         return hpCof;
+    }
+
+    @Override
+    public String getName() {
+        return name;
     }
 
     public double getAttCof() {
@@ -66,6 +76,10 @@ public class Hammer implements Weapon {
     public double getAttack() {
         return attack;
     }
+    public int getIndetifier() {
+        return indetifier;
+    }
+    //--------------------------------------------------------------------------------------
     public void print(){
         ArrayList<String> res = new ArrayList<>();
         res.add(String.valueOf(this.name));

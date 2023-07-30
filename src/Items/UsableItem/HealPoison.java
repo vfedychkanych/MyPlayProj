@@ -5,6 +5,7 @@ import Items.Inventory;
 import java.util.ArrayList;
 
 public class HealPoison implements UsableItems {
+    private int indetifier = 1;
     private String name = "Heal";
     private double toHeal;
     private int coolDown = 10;
@@ -21,6 +22,9 @@ public class HealPoison implements UsableItems {
 
     public int getCoolDown() {
         return coolDown;
+    }
+    public int getIndetifier() {
+        return indetifier;
     }
     //--------------------------------------------------------------------------------------
     public void print(){

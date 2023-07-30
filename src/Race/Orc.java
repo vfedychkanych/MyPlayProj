@@ -3,16 +3,18 @@ package Race;
 public class Orc implements Race{
 
     private String raceName = "Orc";
+    private String weaponForRace = "Hammer";
     private double hp = 150.00;
     private double hpForLvl = 1.0;
     private double attack = 5.0;
     private double attForLvl = 1.1;
     private double defense = 8.0;
     private double defForLvl = 1.1;
-
+    private double CofForRace = 1.3;
+    //--------------------------------------------------------------------------------------
     public Orc() {
     }
-
+    //--------------------------------------------------------------------------------------
     public double getHp() {
         return hp;
     }
@@ -39,5 +41,11 @@ public class Orc implements Race{
 
     public String getRaceName() {
         return raceName;
+    }
+    public String getWeaponForRace() {
+        return weaponForRace;
+    }
+    public double getCofForRace() {
+        return CofForRace;
     }
 }
