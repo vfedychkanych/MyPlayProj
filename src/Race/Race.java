@@ -46,4 +46,7 @@ public interface Race {
     default double getCofForRace() {
         return CofForRace;
     }
+
+    default void print(){
+    };
 }

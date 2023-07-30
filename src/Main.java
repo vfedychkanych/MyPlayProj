@@ -1,3 +1,4 @@
+import Enemy.Enemy;
 import Items.UsableItem.AttackPoison;
 import Items.UsableItem.DefencePoison;
 import Items.UsableItem.HealPoison;
@@ -6,6 +7,7 @@ import Items.Weapon.Baculus;
 import Items.Weapon.Hammer;
 import Items.Weapon.Sword;
 import Player.Player;
+import Race.Race;
 import Race.Elf;
 import Race.Gnome;
 import Race.Human;
@@ -27,78 +29,99 @@ public class Main {
 Створити випадки негод або щастя
 ...
  */
-        Scanner myObj = new Scanner(System.in);
-        System.out.println("Create player (y/n): ");
-        String answer = myObj.next();
-
-        if (answer.equals("y")) {
-            System.out.println("======================================");
-            Scanner nameS = new Scanner(System.in);
-            System.out.println("Enter name of your character: ");
-            String name = myObj.next();
-            System.out.println("======================================");
-            Scanner raceS = new Scanner(System.in);
-            System.out.println("Choose Race(Elf(E)/Gnome(G)/Human(H)/Orc(O)): ");
-            String whatRase = myObj.next();
-            if (whatRase.equals("E") || whatRase.equals("e")) {
-                testPlayer = new Player(new Elf(), name);
-                testPlayer.print();
-            }
-            if (whatRase.equals("G") || whatRase.equals("g")) {
-                testPlayer = new Player(new Gnome(), name);
-                testPlayer.print();
-            }
-            if (whatRase.equals("H") || whatRase.equals("h")) {
-                testPlayer = new Player(new Human(), name);
-                testPlayer.print();
-            }
-            if (whatRase.equals("O") || whatRase.equals("o")) {
-                testPlayer = new Player(new Orc(), name);
-                testPlayer.print();
-            }
-
-            for (int i = 1; i < 5; i++) {
-                switch (i) {
-                    case 1:
-                        testPlayer.addToInventory(new Sword(getRandomNumber(1, 10)));
-                        break;
-                    case 2:
-                        testPlayer.addToInventory(new Axe(testPlayer.getLevel()));
-                        break;
-                    case 3:
-                        testPlayer.addToInventory(new Hammer(testPlayer.getLevel()));
-                        break;
-                    case 4:
-                        testPlayer.addToInventory(new Baculus(testPlayer.getLevel()));
-                        break;
-                }
-            }
-
-            for (int i = 1; i < 4; i++) {
-                switch (i) {
-                    case 1:
-                        testPlayer.addToInventory(new HealPoison(getRandomNumber(15, 100)));
-                        break;
-                    case 2:
-                        testPlayer.addToInventory(new AttackPoison(getRandomNumber(1, 15)));
-                        break;
-                    case 3:
-                        testPlayer.addToInventory(new DefencePoison(getRandomNumber(1, 15)));
-                        break;
-                }
-            }
-            while (true) {
-
-                testPlayer.printInventory();
+        while (true) {
+            Scanner myObj = new Scanner(System.in);
+            System.out.println("Create player (y/n): ");
+            String answer = myObj.next();
+            Race elf = new Elf();
+            Race gnome = new Gnome();
+            Race human = new Human();
+            Race ork = new Orc();
+            if (answer.equals("y")) {
                 System.out.println("======================================");
-                Scanner weap = new Scanner(System.in);
-                System.out.println("Enter index from inventory");
-                String chooseWeapon = myObj.next();
+                Scanner nameS = new Scanner(System.in);
+                System.out.println("Enter name of your character: ");
+                String name = myObj.next();
+                System.out.println("======================================");
+                elf.print();
+                gnome.print();
+                human.print();
+                ork.print();
+                Scanner raceS = new Scanner(System.in);
+                System.out.println("Choose Race(Elf(E)/Gnome(G)/Human(H)/Orc(O)): ");
+                String whatRase = myObj.next();
 
-                testPlayer.takeInHands(Integer.parseInt(chooseWeapon));
-                testPlayer.showHands();
-                testPlayer.print();
+                if (whatRase.equals("E") || whatRase.equals("e")) {
+                    testPlayer = new Player(elf, name);
+                    testPlayer.print();
+                }
+                if (whatRase.equals("G") || whatRase.equals("g")) {
+                    testPlayer = new Player(gnome, name);
+                    testPlayer.print();
+                }
+                if (whatRase.equals("H") || whatRase.equals("h")) {
+                    testPlayer = new Player(human, name);
+                    testPlayer.print();
+                }
+                if (whatRase.equals("O") || whatRase.equals("o")) {
+                    testPlayer = new Player(ork, name);
+                    testPlayer.print();
+                }
+                for (int i = 1; i < 5; i++) {
+                    switch (i) {
+                        case 1 -> testPlayer.addToInventory(new Sword(getRandomNumber(1, 10)));
+                        case 2 -> testPlayer.addToInventory(new Axe(testPlayer.getLevel()));
+                        case 3 -> testPlayer.addToInventory(new Hammer(testPlayer.getLevel()));
+                        case 4 -> testPlayer.addToInventory(new Baculus(testPlayer.getLevel()));
+                    }
+                }
+                for (int i = 1; i < 4; i++) {
+                    switch (i) {
+                        case 1 -> testPlayer.addToInventory(new HealPoison(getRandomNumber(15, 100)));
+                        case 2 -> testPlayer.addToInventory(new AttackPoison(getRandomNumber(1, 15)));
+                        case 3 -> testPlayer.addToInventory(new DefencePoison(getRandomNumber(1, 15)));
+                    }
+                }
+                testPlayer.printInventory();
+                while (true) {
+                    System.out.println("======================================");
+                    Scanner weap = new Scanner(System.in);
+                    System.out.println("Choose from inventory(y/n)");
+                    String chooseWeapon = myObj.next();
+                    if (chooseWeapon.equals("y")) {
+                        System.out.println("======================================");
+                        Scanner we = new Scanner(System.in);
+                        System.out.println("Enter index from inventory");
+                        String index = myObj.next();
 
+                        testPlayer.takeInHands(Integer.parseInt(index));
+                        testPlayer.showHands();
+                        testPlayer.print();
+                    }
+                    if (chooseWeapon.equals("n")) {
+                        break;
+                    }
+                }
+            }
+            if (answer.equals("n")) {
+                Scanner myObj1 = new Scanner(System.in);
+                System.out.println("Create enemy (y/n): ");
+                String answer1 = myObj.next();
+                if (answer1.equals("y")) {
+                    Enemy newEnemy = new Enemy(1);
+                    newEnemy.print();
+                }
+                if (answer1.equals("n")){
+                    Scanner end = new Scanner(System.in);
+                    System.out.println("Restart?(y/n)");
+                    String cont = myObj.next();
+                    if (cont.equals("y")){
+                        continue;
+                    }
+                    if (cont.equals("n")){
+                        break;
+                    }
+                }
             }
         }
     }
