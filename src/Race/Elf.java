@@ -54,6 +54,7 @@ public class Elf implements Race {
     }
 
     public void print(){
+
         System.out.println("======================================");
         System.out.println(this.raceName);
         System.out.println("Master Weapon " + this.weaponForRace);
