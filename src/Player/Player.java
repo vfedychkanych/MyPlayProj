@@ -18,7 +18,7 @@ public class Player{
     private double defense;
     private double defCof;
 
-    protected Collection<Inventory> inventory = new ArrayList<>();
+    protected List<Inventory> inventory = new ArrayList<>();
     protected Inventory inHands;
 
     public Player(Race race, String name) {
@@ -65,7 +65,7 @@ public class Player{
     public void takeInHands(int index){
         if(!inventory.isEmpty()){
             this.attack = this.attackWithOutWeap;
-            this.inHands = (Inventory) inventory.toArray()[index];
+            this.inHands = inventory.get(index);
             if (this.inHands.getIndetifier() == 0) {
                 this.attack += this.inHands.getAttack();
                 if (this.inHands.getName().equals(this.race.getWeaponForRace())) {

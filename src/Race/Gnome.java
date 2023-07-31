@@ -48,6 +48,9 @@ public class Gnome implements Race{
     }
 
     public void print(){
+        /*System.out.print("======================================\n" + this.raceName + "\n" + "Master Weapon " + this.weaponForRace + "\n" + "HP " + this.hp + "\n" + "HP cof " + this.hpForLvl +
+                "\n" + "Atk " + this.attack + "\n" + "Atk cof " + this.attForLvl + "Def " + this.defense + "\n" + "Def cof " + this.defForLvl + "\n" + "Atk cof from race weapon " + this.CofForRace + "\n");
+        */
         System.out.println("======================================");
         System.out.println(this.raceName);
         System.out.println("Master Weapon " + this.weaponForRace);

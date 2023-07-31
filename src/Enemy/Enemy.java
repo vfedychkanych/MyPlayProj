@@ -20,8 +20,6 @@ public class Enemy {
     private double hp;
     private double attack;
     private double defense;
-
-    private List<Inventory> inventory = new ArrayList<>();
     private Inventory inHands;
 
     public Enemy(int level) {
@@ -30,7 +28,6 @@ public class Enemy {
         this.hp = race.getHp();
         this.attack = race.getAttack();
         this.defense = race.getDefense();
-        generateInventory();
         generateInHands();
 
         for (int i = 0; i < level; i++) {
@@ -50,11 +47,6 @@ public class Enemy {
         System.out.println("hp : " + this.hp);
         System.out.println("Attack : " + this.attack);
         System.out.println("Defence : " + this.defense);
-        System.out.println("======================================");
-        System.out.println("INVENTORY");
-        for (Inventory i: inventory) {
-            i.print();
-        }
         System.out.println("======================================");
         System.out.println("IN HANDS");
         this.inHands.print();
@@ -83,24 +75,6 @@ public class Enemy {
         }
     }
 
-    private void addToInventory(Inventory obj) {inventory.add(obj);}
-
-    private void generateInventory() {
-        int randomCountOfSlotsInInventory = getRandomNumber(0, 10);
-        for (int i = 0; i <= randomCountOfSlotsInInventory; i++) {
-            int randomItemGenerate = getRandomNumber(1, 7);
-            switch (randomItemGenerate) {
-                case 1 -> this.addToInventory(new Sword(getRandomNumber(this.level, this.level + 1)));
-                case 2 -> this.addToInventory(new Axe(getRandomNumber(this.level, this.level + 1)));
-                case 3 -> this.addToInventory(new Hammer(getRandomNumber(this.level, this.level + 1)));
-                case 4 -> this.addToInventory(new Baculus(getRandomNumber(this.level, this.level + 1)));
-                case 5 -> this.addToInventory(new HealPoison(getRandomNumber(15, 100)));
-                case 6 -> this.addToInventory(new AttackPoison(getRandomNumber(1, 15)));
-                case 7 -> this.addToInventory(new DefencePoison(getRandomNumber(1, 15)));
-            }
-        }
-    }
-
     private void generateInHands(){
         int randomItemGenerate = getRandomNumber(1, 7);
         switch (randomItemGenerate) {
@@ -122,13 +96,35 @@ public class Enemy {
 
     public void enemiesDie(){
         this.hp = 0.0;
-        this.inventory = null;
         this.inHands = null;
     }
 
     public Inventory dropEnemyInventory(Enemy enemy) {
-        int random = getRandomNumber(0,enemy.inventory.size() );
-        return enemy.inventory.get(random);
+        int randomItemGenerate = getRandomNumber(1, 7);
+        switch (randomItemGenerate) {
+            case 1 -> {
+                return new Sword(getRandomNumber(this.level, this.level + 1));
+            }
+            case 2 -> {
+                return new Axe(getRandomNumber(this.level, this.level + 1));
+            }
+            case 3 -> {
+                return new Hammer(getRandomNumber(this.level, this.level + 1));
+            }
+            case 4 -> {
+                return new Baculus(getRandomNumber(this.level, this.level + 1));
+            }
+            case 5 -> {
+                return new HealPoison(getRandomNumber(15, 100));
+            }
+            case 6 -> {
+                return new AttackPoison(getRandomNumber(1, 15));
+            }
+            case 7 -> {
+                return new DefencePoison(getRandomNumber(1, 15));
+            }
+        }
+        return null;
     }
 
     public Race getRace() {
@@ -171,13 +167,7 @@ public class Enemy {
         this.defense = defense;
     }
 
-    public List<Inventory> getInventory() {
-        return inventory;
-    }
 
-    public void setInventory(List<Inventory> inventory) {
-        this.inventory = inventory;
-    }
 
     public Inventory getInHands() {
         return inHands;
