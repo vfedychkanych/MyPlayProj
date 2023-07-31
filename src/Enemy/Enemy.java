@@ -12,6 +12,7 @@ import Race.*;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 public class Enemy {
     private Race race;
@@ -20,7 +21,7 @@ public class Enemy {
     private double attack;
     private double defense;
 
-    private Collection<Inventory> inventory = new ArrayList<>();
+    private List<Inventory> inventory = new ArrayList<>();
     private Inventory inHands;
 
     public Enemy(int level) {
@@ -119,6 +120,70 @@ public class Enemy {
         }
     }
 
+    public void enemiesDie(){
+        this.hp = 0.0;
+        this.inventory = null;
+        this.inHands = null;
+    }
 
+    public Inventory dropEnemyInventory(Enemy enemy) {
+        int random = getRandomNumber(0,enemy.inventory.size() );
+        return enemy.inventory.get(random);
+    }
 
+    public Race getRace() {
+        return race;
+    }
+
+    public void setRace(Race race) {
+        this.race = race;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
+
+    public double getHp() {
+        return hp;
+    }
+
+    public void setHp(double hp) {
+        this.hp = hp;
+    }
+
+    public double getAttack() {
+        return attack;
+    }
+
+    public void setAttack(double attack) {
+        this.attack = attack;
+    }
+
+    public double getDefense() {
+        return defense;
+    }
+
+    public void setDefense(double defense) {
+        this.defense = defense;
+    }
+
+    public List<Inventory> getInventory() {
+        return inventory;
+    }
+
+    public void setInventory(List<Inventory> inventory) {
+        this.inventory = inventory;
+    }
+
+    public Inventory getInHands() {
+        return inHands;
+    }
+
+    public void setInHands(Inventory inHands) {
+        this.inHands = inHands;
+    }
 }

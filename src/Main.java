@@ -37,7 +37,7 @@ public class Main {
             Race gnome = new Gnome();
             Race human = new Human();
             Race ork = new Orc();
-            if (answer.equals("y")) {
+            if (answer.equalsIgnoreCase("y")) {
                 System.out.println("======================================");
                 Scanner nameS = new Scanner(System.in);
                 System.out.println("Enter name of your character: ");
@@ -88,7 +88,7 @@ public class Main {
                     Scanner weap = new Scanner(System.in);
                     System.out.println("Choose from inventory(y/n)");
                     String chooseWeapon = myObj.next();
-                    if (chooseWeapon.equals("y")) {
+                    if (chooseWeapon.equalsIgnoreCase("y")) {
                         System.out.println("======================================");
                         Scanner we = new Scanner(System.in);
                         System.out.println("Enter index from inventory");
@@ -98,27 +98,27 @@ public class Main {
                         testPlayer.showHands();
                         testPlayer.print();
                     }
-                    if (chooseWeapon.equals("n")) {
+                    if (chooseWeapon.equalsIgnoreCase("n")) {
                         break;
                     }
                 }
             }
-            if (answer.equals("n")) {
+            if (answer.equalsIgnoreCase("n")) {
                 Scanner myObj1 = new Scanner(System.in);
                 System.out.println("Create enemy (y/n): ");
                 String answer1 = myObj.next();
-                if (answer1.equals("y")) {
+                if (answer1.equalsIgnoreCase("y")) {
                     Enemy newEnemy = new Enemy(1);
                     newEnemy.print();
                 }
-                if (answer1.equals("n")){
+                if (answer1.equalsIgnoreCase("n")){
                     Scanner end = new Scanner(System.in);
                     System.out.println("Restart?(y/n)");
                     String cont = myObj.next();
-                    if (cont.equals("y")){
+                    if (cont.equalsIgnoreCase("y")){
                         continue;
                     }
-                    if (cont.equals("n")){
+                    if (cont.equalsIgnoreCase("n")){
                         break;
                     }
                 }

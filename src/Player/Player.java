@@ -1,4 +1,5 @@
 package Player;
+import Enemy.Enemy;
 import Items.Inventory;
 import Race.Race;
 
@@ -74,6 +75,19 @@ public class Player{
         }
         else {
             System.out.println("NOTHING TO TAKE");
+        }
+    }
+
+    public void getDropFromEnemy(Enemy enemy) {
+        if (enemy.getHp() <= 0.0) {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Підібрати це спорядження(y/n)?" + enemy.dropEnemyInventory(enemy));
+            if (scanner.nextLine().equalsIgnoreCase("y")) {
+                this.inventory.add(enemy.dropEnemyInventory(enemy));
+            } else{
+                System.out.println("Спорядження не підібрано");
+            }
+            enemy.enemiesDie();
         }
     }
 
