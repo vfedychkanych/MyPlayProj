@@ -1,35 +1,24 @@
-import Enemy.Enemy;
-import Items.UsableItem.AttackPoison;
-import Items.UsableItem.DefencePoison;
-import Items.UsableItem.HealPoison;
-import Items.Weapon.Axe;
-import Items.Weapon.Baculus;
-import Items.Weapon.Hammer;
-import Items.Weapon.Sword;
 import Player.Player;
-import Race.Race;
-import Race.Elf;
-import Race.Gnome;
-import Race.Human;
-import Race.Orc;
-
-import java.util.Scanner;
+import UI.*;
 
 public class Main {
     private static Player testPlayer;
+
 
     public static int getRandomNumber(int min, int max) {
         return (int) ((Math.random() * (max - min)) + min);
     }
 
     public static void main(String[] args) {
+        new Game();
+
 /*
 Створити режим бою
 Створити НПС вороги
 Створити випадки негод або щастя
 ...
  */
-        while (true) {
+        /*while (true) {
             Scanner myObj = new Scanner(System.in);
             System.out.println("Create player (y/n): ");
             String answer = myObj.next();
@@ -124,5 +113,8 @@ public class Main {
                 }
             }
         }
+    }*/
+
+
     }
 }
