@@ -11,6 +11,8 @@ public class Game {
     private JFrame frame;
     private JPanel menu;
     private JPanel newGame;
+    private JPanel gamePlay;
+    private JPanel loadGame;
     public Game(){
         frame = new JFrame("game");
         frame.setSize(400,400);
@@ -47,6 +49,7 @@ public class Game {
         frame.add(menu);
 
         menuNG.addActionListener(e ->{frame.remove(menu); newGame(); frame.pack();});
+        menuLG.addActionListener(e -> {frame.remove(menu); loadGame(); frame.pack();});
         menuEX.addActionListener(e -> System.exit(0));
     }
 
@@ -330,12 +333,32 @@ public class Game {
         });
         back.addActionListener(e -> {frame.remove(newGame); menu(); frame.pack();});
 
-
-
         frame.add(newGame);
     }
 
     private void gamePlay(){
-        
+        gamePlay = new JPanel();
+        gamePlay.setLayout(null);
+        gamePlay.setPreferredSize(new Dimension(400,400));
+        JButton back = new JButton("Back");
+        back.setBounds(225,220,150,135);
+        gamePlay.add(back);
+
+        back.addActionListener(e -> {frame.remove(gamePlay); menu(); frame.pack();});
+
+        frame.add(gamePlay);
+    }
+
+    private void loadGame(){
+        loadGame = new JPanel();
+        loadGame.setLayout(null);
+        loadGame.setPreferredSize(new Dimension(400,400));
+        JButton back = new JButton("Back");
+        back.setBounds(225,220,150,135);
+        loadGame.add(back);
+
+        back.addActionListener(e -> {frame.remove(loadGame); menu(); frame.pack();});
+
+        frame.add(loadGame);
     }
 }
