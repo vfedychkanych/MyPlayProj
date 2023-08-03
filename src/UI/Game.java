@@ -149,6 +149,7 @@ public class Game {
             DefForLv.append("def cof(lv) " + chosenRace.getDefForLvl());
             DefForLv.setBounds(25, 340, 200,30);
             newGame.add(DefForLv);
+            newGame.updateUI();
         });
         gnome.addActionListener(e -> {
             this.chosenRace = new Gnome();
@@ -206,6 +207,7 @@ public class Game {
             DefForLv.append("def cof(lv) " + chosenRace.getDefForLvl());
             DefForLv.setBounds(25, 340, 200,30);
             newGame.add(DefForLv);
+            newGame.updateUI();
         });
         human.addActionListener(e -> {
             this.chosenRace = new Human();
@@ -263,6 +265,7 @@ public class Game {
             DefForLv.append("def cof(lv) " + chosenRace.getDefForLvl());
             DefForLv.setBounds(25, 340, 200,30);
             newGame.add(DefForLv);
+            newGame.updateUI();
         });
         ork.addActionListener(e -> {
             this.chosenRace = new Orc();
@@ -320,6 +323,7 @@ public class Game {
             DefForLv.append("def cof(lv) " + chosenRace.getDefForLvl());
             DefForLv.setBounds(25, 340, 200,30);
             newGame.add(DefForLv);
+            newGame.updateUI();
         });
         startGame.addActionListener(e -> {
             if (name.getText().isEmpty())
