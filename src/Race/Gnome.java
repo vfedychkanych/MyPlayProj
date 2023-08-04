@@ -3,6 +3,8 @@ package Race;
 public class Gnome implements Race{
     private String raceName = "Gnome";
     private String weaponForRace = "Axe";
+
+    private String defenceForRace = "Heavy Armor";
     private double hp = 120.00;
     private double hpForLvl = 1.5;
     private double attack = 3.0;
@@ -14,6 +16,15 @@ public class Gnome implements Race{
     public Gnome() {
     }
     //--------------------------------------------------------------------------------------
+
+    public String getDefenceForRace() {
+        return defenceForRace;
+    }
+
+    public void setDefenceForRace(String defenceForRace) {
+        this.defenceForRace = defenceForRace;
+    }
+
     public double getHp() {
         return hp;
     }

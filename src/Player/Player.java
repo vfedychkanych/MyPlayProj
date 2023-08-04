@@ -1,11 +1,12 @@
 package Player;
 import Enemy.Enemy;
+import Items.Armor.Armor;
 import Items.Inventory;
 import Race.Race;
 
 import java.util.*;
 
-public class Player{
+public class Player<T extends Inventory>{
     private String name;
     private Race race;
     private String raceName;
@@ -13,13 +14,17 @@ public class Player{
     private double hp;
     private double hpForLvl;
     private double attackWithOutWeap;
+
+    private double defenseWithOutWeap;
     private double attack;
     private double attCof;
     private double defense;
     private double defCof;
 
-    protected List<Inventory> inventory = new ArrayList<>();
-    protected Inventory inHands;
+    protected List<T> inventory = new ArrayList<>();
+    protected T inHands;
+
+    protected T activeArmor;
 
     public Player(Race race, String name) {
         this.name = name;
@@ -29,6 +34,7 @@ public class Player{
         this.hp = race.getHp();
         this.hpForLvl = race.getHpForLvl();
         this.attackWithOutWeap =  race.getAttack();
+        this.defenseWithOutWeap = race.getDefense();
         this.attack = race.getAttack();
         this.attCof = race.getAttForLvl();
         this.defense = race.getDefense();
@@ -52,7 +58,7 @@ public class Player{
 
     }
 
-    public void addToInventory(Inventory obj){
+    public void addToInventory(T obj){
         inventory.add(obj);
     }
 
@@ -62,18 +68,29 @@ public class Player{
         }
     }
 
-    public void takeInHands(int index){
-        if(!inventory.isEmpty()){
-            this.attack = this.attackWithOutWeap;
-            this.inHands = inventory.get(index);
-            if (this.inHands.getIndetifier() == 0) {
-                this.attack += this.inHands.getAttack();
-                if (this.inHands.getName().equals(this.race.getWeaponForRace())) {
-                    this.attack *= this.race.getCofForRace();
-                }
-            }
-        }
-        else {
+   public void takeInHands(int index){
+       if(!inventory.isEmpty()){
+          if (inventory.get(index) instanceof Armor) {
+              this.defense = this.defenseWithOutWeap;
+              this.activeArmor = inventory.get(index);
+              this.defense += this.activeArmor.getDefence();
+              if (this.activeArmor.getName().equals(this.race.getDefenseForRace())) {
+                  this.defense *= this.race.getCofForRace();
+              }
+
+          }else{
+              this.attack = this.attackWithOutWeap;
+              this.inHands = inventory.get(index);
+              if (this.inHands.getIndetifier() == 0) {
+                  this.attack += this.inHands.getAttack();
+                  if (this.inHands.getName().equals(this.race.getWeaponForRace())) {
+                      this.attack *= this.race.getCofForRace();
+                  }
+              }
+
+          }
+
+       }else {
             System.out.println("NOTHING TO TAKE");
         }
     }
@@ -83,7 +100,7 @@ public class Player{
             Scanner scanner = new Scanner(System.in);
             System.out.println("Підібрати це спорядження(y/n)?" + enemy.dropEnemyInventory(enemy));
             if (scanner.nextLine().equalsIgnoreCase("y")) {
-                this.inventory.add(enemy.dropEnemyInventory(enemy));
+                this.inventory.add((T) enemy.dropEnemyInventory(enemy));
             } else{
                 System.out.println("Спорядження не підібрано");
             }
@@ -95,6 +112,13 @@ public class Player{
         this.inHands.print();
     }
 
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
 
-
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
 }

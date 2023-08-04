@@ -3,6 +3,7 @@ package Race;
 public interface Race {
     String raceName = "";
     String weaponForRace = "";
+    String defenseForRace = "";
     double hp = 0.00;
     double hpForLvl = 0.0;
     double attack = 0.0;
@@ -13,6 +14,9 @@ public interface Race {
 
     default double getHp() {
         return hp;
+    }
+    default String getDefenseForRace() {
+        return defenseForRace;
     }
 
     default double getHpForLvl() {

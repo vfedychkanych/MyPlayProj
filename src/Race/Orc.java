@@ -4,6 +4,8 @@ public class Orc implements Race{
 
     private String raceName = "Orc";
     private String weaponForRace = "Hammer";
+
+    private String defenceForRace = "Heavy Armor";
     private double hp = 150.00;
     private double hpForLvl = 1.0;
     private double attack = 5.0;
@@ -15,6 +17,15 @@ public class Orc implements Race{
     public Orc() {
     }
     //--------------------------------------------------------------------------------------
+
+    public String getDefenceForRace() {
+        return defenceForRace;
+    }
+
+    public void setDefenceForRace(String defenceForRace) {
+        this.defenceForRace = defenceForRace;
+    }
+
     public double getHp() {
         return hp;
     }
