@@ -103,13 +103,13 @@ public class Enemy {
         int randomItemGenerate = getRandomNumber(1, 7);
         switch (randomItemGenerate) {
             case 1 -> {
-                return new Sword(getRandomNumber(this.level, this.level + 1));
+                return  new Sword(getRandomNumber(this.level, this.level + 1));
             }
             case 2 -> {
-                return new Axe(getRandomNumber(this.level, this.level + 1));
+                return  new Axe(getRandomNumber(this.level, this.level + 1));
             }
             case 3 -> {
-                return new Hammer(getRandomNumber(this.level, this.level + 1));
+                return  new Hammer(getRandomNumber(this.level, this.level + 1));
             }
             case 4 -> {
                 return new Baculus(getRandomNumber(this.level, this.level + 1));

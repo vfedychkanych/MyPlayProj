@@ -3,6 +3,8 @@ package Race;
 public class Human implements Race{
     private String raceName = "Human";
     private String weaponForRace = "Sword";
+
+    private String defenceForRace = "Medium Armor";
     private double hp = 100.00;
     private double hpForLvl = 1.1;
     private double attack = 1.0;
@@ -14,6 +16,15 @@ public class Human implements Race{
     public Human() {
     }
     //--------------------------------------------------------------------------------------
+
+    public String getDefenceForRace() {
+        return defenceForRace;
+    }
+
+    public void setDefenceForRace(String defenceForRace) {
+        this.defenceForRace = defenceForRace;
+    }
+
     public double getHp() {
         return hp;
     }
