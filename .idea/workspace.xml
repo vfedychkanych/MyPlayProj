@@ -1,16 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="67a3b275-abd1-4c7b-8928-dd9e619a3667" name="Changes" comment="V: Armor" />
+    <list default="true" id="67a3b275-abd1-4c7b-8928-dd9e619a3667" name="Changes" comment="V: more in enemies without testng">
+      <change afterPath="$PROJECT_DIR$/src/Items/Armor/Heavy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Items/Armor/Light.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Items/Armor/Medium.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_26_07_2023_22_39__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_26_07_2023_22_39__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_26_07_2023_22_40__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_26_07_2023_22_40__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_07_2023_15_30_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_07_2023_15_30_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_07_2023_15_30__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_07_2023_15_30__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_07_2023_1_27__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_07_2023_1_27__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_07_2023_22_53__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_07_2023_22_53__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_07_2023_0_24__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_07_2023_0_24__Changes_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_07_2023_14_39_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_07_2023_14_39__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_07_2023_1_07__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_07_2023_1_07__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_07_2023_1_36__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_07_2023_1_36__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Enemy/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Enemy/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Items/Armor/Armor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Items/Armor/Armor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Items/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Items/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Race/Elf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Race/Elf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Race/Gnome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Race/Gnome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Race/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Race/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Race/Orc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Race/Orc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Race/Race.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Race/Race.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plan/projectDiagram.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/src/plan/projectDiagram.drawio" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="ForProdution" />
+        <entry key="$PROJECT_DIR$" value="Basic-Application" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -21,6 +62,9 @@
         <option value="master" />
       </list>
     </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Enemy/Enemy.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -35,10 +79,33 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ToolWindowRun.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;ForProdution&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.updates&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="MyPlayProj" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -48,19 +115,19 @@
       <option name="presentableId" value="Default" />
       <updated>1689798292423</updated>
     </task>
-    <task id="LOCAL-00001" summary="V: Armor">
-      <created>1690408486931</created>
+    <task id="LOCAL-00001" summary="this is only start of this GameProj">
+      <created>1689808179881</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1690408486931</updated>
+      <updated>1689808179881</updated>
     </task>
-    <task id="LOCAL-00002" summary="V: Armor">
-      <created>1690408575095</created>
+    <task id="LOCAL-00002" summary="V: Little adopt">
+      <created>1690751752211</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1690408575095</updated>
+      <updated>1690751752211</updated>
     </task>
     <task id="LOCAL-00003" summary="V: Armor">
       <created>1690408749737</created>
@@ -79,19 +146,49 @@
     <option name="localTasksCounter" value="5" />
     <servers />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="SHOW_OTHER_BRANCHES" value="true" />
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/Ovoitovych" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="V: Armor" />
-    <option name="LAST_COMMIT_MESSAGE" value="V: Armor" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="this is only start of this GameProj" />
+    <MESSAGE value="V: Little adopt" />
+    <option name="LAST_COMMIT_MESSAGE" value="V: Little adopt" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
