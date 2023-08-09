@@ -4,10 +4,7 @@ import Items.Inventory;
 import Items.UsableItem.AttackPoison;
 import Items.UsableItem.DefencePoison;
 import Items.UsableItem.HealPoison;
-import Items.Weapon.Axe;
-import Items.Weapon.Baculus;
-import Items.Weapon.Hammer;
-import Items.Weapon.Sword;
+import Items.Weapon.*;
 import Race.*;
 
 import java.util.ArrayList;
@@ -86,7 +83,7 @@ public class Enemy {
                 case 6 -> this.inHands = new  AttackPoison(getRandomNumber(1, 15));
                 case 7 -> this.inHands = new  DefencePoison(getRandomNumber(1, 15));
             }
-        if (this.inHands.getIndetifier() == 0) {
+        if (this.inHands instanceof Weapon) {
             this.attack += this.inHands.getAttack();
             if (this.inHands.getName().equals(this.race.getWeaponForRace())) {
                 this.attack *= this.race.getCofForRace();

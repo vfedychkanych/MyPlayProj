@@ -2,6 +2,8 @@ package Player;
 import Enemy.Enemy;
 import Items.Armor.Armor;
 import Items.Inventory;
+import Items.UsableItem.UsableItems;
+import Items.Weapon.Weapon;
 import Race.Race;
 
 import java.util.*;
@@ -69,28 +71,21 @@ public class Player<T extends Inventory>{
     }
 
    public void takeInHands(int index){
-       if(!inventory.isEmpty()){
-          if (inventory.get(index) instanceof Armor) {
-              this.defense = this.defenseWithOutWeap;
-              this.activeArmor = inventory.get(index);
-              this.defense += this.activeArmor.getDefence();
-              if (this.activeArmor.getName().equals(this.race.getDefenseForRace())) {
-                  this.defense *= this.race.getCofForRace();
-              }
-
-          }else{
-              this.attack = this.attackWithOutWeap;
-              this.inHands = inventory.get(index);
-              if (this.inHands.getIndetifier() == 0) {
-                  this.attack += this.inHands.getAttack();
-                  if (this.inHands.getName().equals(this.race.getWeaponForRace())) {
-                      this.attack *= this.race.getCofForRace();
-                  }
-              }
-
-          }
-
-       }else {
+       if(!inventory.isEmpty()) {
+           if (inventory.get(index) instanceof Armor) {
+               this.defense = this.defenseWithOutWeap;
+               this.activeArmor = inventory.get(index);
+               this.defense += this.activeArmor.getDefence();
+               if (this.activeArmor.getName().equals(this.race.getDefenseForRace())) {this.defense *= this.race.getCofForRace();}
+           }
+           if (inventory.get(index) instanceof Weapon) {
+               this.attack = this.attackWithOutWeap;
+               this.inHands = inventory.get(index);
+               this.attack += this.inHands.getAttack();
+               if (this.inHands.getName().equals(this.race.getWeaponForRace())) {this.attack *= this.race.getCofForRace();}
+           }
+           if (inventory.get(index) instanceof UsableItems){this.inHands = inventory.get(index);}
+       } else {
             System.out.println("NOTHING TO TAKE");
         }
     }

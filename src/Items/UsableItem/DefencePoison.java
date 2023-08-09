@@ -5,7 +5,6 @@ import Items.Inventory;
 import java.util.ArrayList;
 
 public class DefencePoison implements UsableItems {
-    private int indetifier = 1;
     private String name = "Defence";
     public double toDef;
     public int coolDown = 15;
@@ -26,9 +25,6 @@ public class DefencePoison implements UsableItems {
 
     public double getToDef() {
         return toDef;
-    }
-    public int getIndetifier() {
-        return indetifier;
     }
     //--------------------------------------------------------------------------------------
     public void print(){

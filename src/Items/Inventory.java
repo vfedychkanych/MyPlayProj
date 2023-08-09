@@ -1,7 +1,6 @@
 package Items;
 
 public interface Inventory {
-    int indetifier = 0;
     String name = "";
     double attack = 0.0;
     double defence = 0.0;
@@ -18,5 +17,4 @@ public interface Inventory {
         return defence;
     }
 
-    default int getIndetifier(){return indetifier;}
 }

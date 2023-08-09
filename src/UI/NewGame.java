@@ -1,61 +1,17 @@
 package UI;
+
 import Race.*;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
 
-public class Game {
+public class NewGame extends JPanel {
+    private JPanel newGame;
     private Race chosenRace;
     private String playerName;
-    private JFrame frame;
-    private JPanel menu;
-    private JPanel newGame;
-    private JPanel gamePlay;
-    private JPanel loadGame;
-
-    public Game() {
-        frame = new JFrame("game");
-        frame.setSize(400, 400);
-        frame.setResizable(false);
-        menu();
-
-        frame.setLocationRelativeTo(null);
-        frame.setVisible(true);
-
-        frame.addWindowListener(new WindowAdapter() {
-            @Override
-            public void windowClosing(WindowEvent e) {
-                System.exit(0);
-            }
-        });
-    }
-
-
-    private void menu(){
-        menu = new JPanel();
-        menu.setLayout(null);
-        menu.setPreferredSize(new Dimension(400,400));
-        JButton menuNG = new JButton("New Game");
-        menuNG.setBounds(100,50,200,50);
-        menu.add(menuNG);
-
-        JButton menuLG = new JButton("Load Game");
-        menuLG.setBounds(100,100,200,50);
-        menu.add(menuLG);
-
-        JButton menuEX = new JButton("Exit");
-        menuEX.setBounds(100,150,200,50);
-        menu.add(menuEX);
-
-        frame.add(menu);
-
-        menuNG.addActionListener(e ->{frame.remove(menu); newGame(); frame.pack();});
-        menuLG.addActionListener(e -> {frame.remove(menu); loadGame(); frame.pack();});
-        menuEX.addActionListener(e -> System.exit(0));
-    }
-
-    private void newGame(){
+    private JFrame f;
+    public NewGame(JFrame f) {
+        this.f = f;
         newGame = new JPanel();
         newGame.setLayout(null);
         newGame.setPreferredSize(new Dimension(400,400));
@@ -329,44 +285,16 @@ public class Game {
         });
         startGame.addActionListener(e -> {
             if (name.getText().isEmpty())
-                JOptionPane.showMessageDialog(frame.getContentPane(), "Please enter your name");
+                JOptionPane.showMessageDialog(this.f.getContentPane(), "Please enter your name");
             else {
                 this.playerName = name.getText();
-                frame.remove(newGame);
-                gamePlay();
-                frame.pack();
+                this.f.remove(newGame);
+                new GamePlay();
+                this.f.pack();
             }
         });
-        back.addActionListener(e -> {frame.remove(newGame); menu(); frame.pack();});
+        back.addActionListener(e -> {this.f.remove(newGame); new Game(); this.f.pack();});
 
-        frame.add(newGame);
+        this.f.add(newGame);
     }
-
-    private void gamePlay(){
-        gamePlay = new JPanel();
-        gamePlay.setLayout(null);
-        gamePlay.setPreferredSize(new Dimension(400,400));
-        JButton back = new JButton("Back");
-        back.setBounds(225,220,150,135);
-        gamePlay.add(back);
-        back.addActionListener(e -> {frame.remove(gamePlay); menu(); frame.pack();});
-
-        frame.add(gamePlay);
-    }
-
-    private void loadGame(){
-        loadGame = new JPanel();
-        loadGame.setLayout(null);
-        loadGame.setPreferredSize(new Dimension(400,400));
-        JButton back = new JButton("Back");
-        back.setBounds(225,220,150,135);
-        loadGame.add(back);
-
-
-        back.addActionListener(e -> {frame.remove(loadGame); menu(); frame.pack();});
-
-        frame.add(loadGame);
-    }
-
-
 }

@@ -35,10 +35,6 @@ public class Elf implements Race {
         return defenceForRace;
     }
 
-    public void setDefenceForRace(String defenceForRace) {
-        this.defenceForRace = defenceForRace;
-    }
-
     public double getHpForLvl() {
         return hpForLvl;
     }

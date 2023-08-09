@@ -21,9 +21,6 @@ public class Human implements Race{
         return defenceForRace;
     }
 
-    public void setDefenceForRace(String defenceForRace) {
-        this.defenceForRace = defenceForRace;
-    }
 
     public double getHp() {
         return hp;
