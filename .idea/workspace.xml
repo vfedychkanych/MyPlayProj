@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67a3b275-abd1-4c7b-8928-dd9e619a3667" name="Changes" comment="V: Armor">
-      <change afterPath="$PROJECT_DIR$/src/UI/GamePlay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/LoadGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/NewGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/toDel/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/GamePlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/GamePlay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/LoadGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/toDel/LoadGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/toDel/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/NewGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/toDel/NewGame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +40,9 @@
       </list>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Enemy/Enemy.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -50,13 +54,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;PlanTest&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Git.Branch.Popup.ShowAllRemotes": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "PlanTest",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Game" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />

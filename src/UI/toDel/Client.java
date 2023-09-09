@@ -1,4 +1,4 @@
-package UI;
+package UI.toDel;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;

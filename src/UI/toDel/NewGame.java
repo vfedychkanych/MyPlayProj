@@ -1,9 +1,12 @@
-package UI;
+package UI.toDel;
 
 import Race.*;
+import UI.Game;
+import UI.GamePlay;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.WindowEvent;
 
 public class NewGame extends JPanel {
     private JPanel newGame;
@@ -31,15 +34,15 @@ public class NewGame extends JPanel {
         JButton startGame = new JButton("Start");
         startGame.setBounds(225,100,150,135);
         startGame.setVisible(false);
-        JButton back = new JButton("Back");
-        back.setBounds(225,220,150,135);
+        JButton backNG = new JButton("Back");
+        backNG.setBounds(225,220,150,135);
 
         newGame.add(elf);
         newGame.add(gnome);
         newGame.add(human);
         newGame.add(ork);
         newGame.add(startGame);
-        newGame.add(back);
+        newGame.add(backNG);
 
         JTextArea raceName = new JTextArea();
         JTextArea weaponRace = new JTextArea();
@@ -289,11 +292,11 @@ public class NewGame extends JPanel {
             else {
                 this.playerName = name.getText();
                 this.f.remove(newGame);
-                new GamePlay();
+                //new GamePlay();
                 this.f.pack();
             }
         });
-        back.addActionListener(e -> {this.f.remove(newGame); new Game(); this.f.pack();});
+        backNG.addActionListener(e -> {this.f.remove(newGame); new Game(); this.f.pack();});
 
         this.f.add(newGame);
     }

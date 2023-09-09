@@ -1,27 +1,29 @@
 package UI;
+
 import Race.*;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class Game {
-    private Race chosenRace;
+public class Game extends JFrame{
     private String playerName;
+    private Race chosenRace;
     private JFrame frame;
     private JPanel menu;
-    private JPanel newGame;
-    private JPanel gamePlay;
     private JPanel loadGame;
+    private JPanel gamePlay;
+    private JPanel newGame;
+
 
     public Game() {
         frame = new JFrame("game");
         frame.setSize(400, 400);
         frame.setResizable(false);
         menu();
-
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
+
 
         frame.addWindowListener(new WindowAdapter() {
             @Override
@@ -31,8 +33,7 @@ public class Game {
         });
     }
 
-
-    private void menu(){
+  private void menu(){
         menu = new JPanel();
         menu.setLayout(null);
         menu.setPreferredSize(new Dimension(400,400));
@@ -50,7 +51,7 @@ public class Game {
 
         frame.add(menu);
 
-        menuNG.addActionListener(e ->{frame.remove(menu); newGame(); frame.pack();});
+        menuNG.addActionListener(e ->{frame.remove(menu); new GamePlay(playerName, chosenRace); frame.pack();});
         menuLG.addActionListener(e -> {frame.remove(menu); loadGame(); frame.pack();});
         menuEX.addActionListener(e -> System.exit(0));
     }
@@ -332,12 +333,11 @@ public class Game {
                 JOptionPane.showMessageDialog(frame.getContentPane(), "Please enter your name");
             else {
                 this.playerName = name.getText();
-                frame.remove(newGame);
-                gamePlay();
-                frame.pack();
+                frame.setVisible(false);
+                new GamePlay(playerName, chosenRace);
             }
         });
-        back.addActionListener(e -> {frame.remove(newGame); menu(); frame.pack();});
+        back.addActionListener(e -> {frame.dispatchEvent(new WindowEvent(frame, WindowEvent.WINDOW_CLOSING)); menu(); frame.pack();});
 
         frame.add(newGame);
     }
@@ -349,7 +349,7 @@ public class Game {
         JButton back = new JButton("Back");
         back.setBounds(225,220,150,135);
         gamePlay.add(back);
-        back.addActionListener(e -> {frame.remove(gamePlay); menu(); frame.pack();});
+        back.addActionListener(e -> {frame.remove(gamePlay);  frame.pack();});
 
         frame.add(gamePlay);
     }
