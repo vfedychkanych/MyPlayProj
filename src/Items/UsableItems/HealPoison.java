@@ -1,6 +1,4 @@
-package Items.UsableItem;
-
-import Items.Inventory;
+package Items.UsableItems;
 
 import java.util.ArrayList;
 
@@ -22,6 +20,16 @@ public class HealPoison implements UsableItems {
     public int getCoolDown() {
         return coolDown;
     }
+
+    @Override
+    public String toString() {
+        return "HealPoison{" +
+                "name='" + name +
+                ", toHeal=" + toHeal +
+                ", coolDown=" + coolDown +
+                '}';
+    }
+
     //--------------------------------------------------------------------------------------
     public void print(){
         ArrayList<String> res = new ArrayList<>();

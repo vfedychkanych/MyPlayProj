@@ -5,13 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67a3b275-abd1-4c7b-8928-dd9e619a3667" name="Changes" comment="V: Armor">
+      <change afterPath="$PROJECT_DIR$/src/UI/GP/GameZone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/GP/InfoZone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/NewGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_08_2023_20_54__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_08_2023_20_54__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_08_2023_13_18__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_08_2023_13_18__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_26_07_2023_22_52__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_26_07_2023_22_52__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_08_2023_13_18__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_08_2023_13_18__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_07_2023_0_24__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_07_2023_0_24__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_07_2023_1_13__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_07_2023_1_13__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/toDel/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/GamePlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/GamePlay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/LoadGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/toDel/LoadGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/toDel/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/NewGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/toDel/NewGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Enemy/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Enemy/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Items/UsableItem/AttackPoison.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Items/UsableItems/AttackPoison.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Items/UsableItem/DefencePoison.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Items/UsableItems/DefencePoison.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Items/UsableItem/HealPoison.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Items/UsableItems/HealPoison.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Items/UsableItem/UsableItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Items/UsableItems/UsableItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Items/Weapon/Axe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Items/Weapon/Axe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Items/Weapon/Baculus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Items/Weapon/Baculus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Items/Weapon/Hammer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Items/Weapon/Hammer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Items/Weapon/Sword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Items/Weapon/Sword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/toDel/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/GamePlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/GP/GamePlay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/toDel/LoadGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/LoadGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/toDel/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/toDel/NewGame.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +66,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2So1nq4gFnLjUUZjuPmv2L3t7JL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -59,12 +82,14 @@
     "Git.Branch.Popup.ShowAllRemotes": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "521",
     "git-widget-placeholder": "PlanTest",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="Game" type="Application" factoryName="Application">
+    <configuration name="Game" type="Application" factoryName="Application" show_console_on_std_out="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="MyPlayProj" />
       <method v="2">

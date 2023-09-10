@@ -1,6 +1,5 @@
 import Player.Player;
-import UI.Game;
-import UI.*;
+import UI.Menu;
 
 public class Main {
     private static Player testPlayer;
@@ -11,7 +10,9 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        new Game();
+        new Menu();
+
+
 
 /*
 Створити режим бою

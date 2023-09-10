@@ -1,4 +1,4 @@
-package Items.UsableItem;
+package Items.UsableItems;
 
 import Items.Inventory;
 

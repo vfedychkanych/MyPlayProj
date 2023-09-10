@@ -1,13 +1,31 @@
-package UI.toDel;
+package UI;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
-public class Menu extends JPanel {
+public class Menu extends JFrame {
     private JPanel menu;
     private JFrame f;
-    public Menu(JFrame frame){
-        this.f = frame;
+    public Menu(){
+        f = new JFrame();
+        f = new JFrame("game");
+        f.setSize(400, 400);
+        f.setResizable(false);
+        menu();
+        f.setLocationRelativeTo(null);
+        f.setVisible(true);
+
+        f.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+        });
+    }
+
+    private void menu(){
         menu = new JPanel();
         menu.setVisible(true);
         menu.setLayout(null);
@@ -31,7 +49,4 @@ public class Menu extends JPanel {
         f.add(menu);
     }
 
-    public JPanel getMenu() {
-        return menu;
-    }
 }

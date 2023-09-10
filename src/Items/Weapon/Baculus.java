@@ -49,6 +49,19 @@ public class Baculus implements Weapon {
     public double getAttack() {
         return attack;
     }
+
+    @Override
+    public String toString() {
+        return "Baculus{" +
+                "name='" + name +
+                ", attack=" + attack +
+                ", lvl=" + lvl +
+                ", hp=" + hp +
+                ", attCof=" + attCof +
+                ", hpCof=" + hpCof +
+                '}';
+    }
+
     //--------------------------------------------------------------------------------------
     public void print(){
         ArrayList<String> res = new ArrayList<>();

@@ -51,6 +51,18 @@ public class Sword implements Weapon {
         return attack;
     }
 
+    @Override
+    public String toString() {
+        return "Sword{" +
+                "name='" + name +
+                ", attack=" + attack +
+                ", lvl=" + lvl +
+                ", hp=" + hp +
+                ", attCof=" + attCof +
+                ", hpCof=" + hpCof +
+                '}';
+    }
+
     //--------------------------------------------------------------------------------------
     public void print(){
         ArrayList<String> res = new ArrayList<>();

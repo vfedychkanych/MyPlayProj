@@ -1,15 +1,11 @@
 package Enemy;
 
 import Items.Inventory;
-import Items.UsableItem.AttackPoison;
-import Items.UsableItem.DefencePoison;
-import Items.UsableItem.HealPoison;
+import Items.UsableItems.AttackPoison;
+import Items.UsableItems.DefencePoison;
+import Items.UsableItems.HealPoison;
 import Items.Weapon.*;
 import Race.*;
-
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
 
 public class Enemy {
     private Race race;

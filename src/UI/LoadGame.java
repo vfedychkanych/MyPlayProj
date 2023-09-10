@@ -1,6 +1,6 @@
-package UI.toDel;
+package UI;
 
-import UI.Game;
+import UI.toDel.Game;
 
 import javax.swing.*;
 import java.awt.*;
