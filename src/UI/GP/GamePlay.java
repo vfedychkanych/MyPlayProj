@@ -1,25 +1,21 @@
 package UI.GP;
 
-import Items.*;
 import Player.Player;
 import Race.Race;
+import UI.GP.INVview.InventoryView;
 import UI.Menu;
-import UI.toDel.Game;
 import Items.Weapon.*;
 import Items.UsableItems.*;
-import Items.Armor.*;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.util.List;
 
 public class GamePlay extends JFrame {
     private JFrame gamePlay;
     private JPanel InfoZone;
     private Dimension d = new Dimension(500,535);
     private Player player;
-    private JDialog infoZone = new InfoZone(gamePlay, player.inventoryToStr());
 
     public GamePlay(String Pname, Race PRase){
         this.player = new Player(PRase, Pname);
@@ -45,7 +41,8 @@ public class GamePlay extends JFrame {
             @Override
             public void keyPressed(KeyEvent e) {
                 if (e.getKeyCode() == KeyEvent.VK_I) {
-                    infoZone.setVisible(true);
+                    //new InfoZone(gamePlay, player.inventoryToStr());
+                    new InventoryView(player.getInventory(), player);
                 }
             }
         });
@@ -55,9 +52,6 @@ public class GamePlay extends JFrame {
         InfoZone = new JPanel();
         InfoZone.setPreferredSize(new Dimension(500,500));
         InfoZone.setBounds(500,500,500,500);
-
-
-
         InfoZone.updateUI();
         gamePlay.add(InfoZone);
     }
@@ -69,7 +63,7 @@ public class GamePlay extends JFrame {
     public void generatePlayerInvetory(){
         for (int i = 1; i < 10; i++) {
 
-            switch (getRandomNumber(1,4)) {
+            switch (getRandomNumber(1,2)) {
                 case 1 -> player.addToInventory(new Sword(getRandomNumber(1, 10)));
                 case 2 -> player.addToInventory(new Axe(player.getLevel()));
                 case 3 -> player.addToInventory(new Hammer(player.getLevel()));

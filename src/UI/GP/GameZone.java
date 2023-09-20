@@ -21,5 +21,8 @@ public class GameZone extends JPanel {
         for (int i = 0; i <= 500; i += 25) {
             d2.drawLine(0,i, 500,i);
         }
+
+        d2.setPaint(Color.BLACK);
+        d2.fillOval(7,3,10,10);
     }
 }

@@ -55,7 +55,7 @@ public class Hammer implements Weapon {
     @Override
     public String toString() {
         return "Hammer{" +
-                "name='" + name +
+                "name=" + name +
                 ", attack=" + attack +
                 ", lvl=" + lvl +
                 ", hp=" + hp +

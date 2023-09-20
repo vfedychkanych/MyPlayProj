@@ -23,27 +23,26 @@ public class InfoZone extends JDialog {
         d.setLocationRelativeTo(null);
         dialog(d,inv);
         d.setVisible(true);
-        d.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                if (e.getButton() == MouseEvent.BUTTON1) {
-                    d.setVisible(false);
-                }
-
-            }
-        });
     }
 
     private void dialog(JDialog d, JList inventory){
         JPanel p = new JPanel();
+        p.setLayout(null);
         p.setPreferredSize(new Dimension(400,400));
         JScrollPane sp = new JScrollPane(inventory);
-        sp.setBounds(0,0, 400,400);
+        sp.setBounds(0,0, 400,300);
         p.add(sp);
 
-//        JButton b = new JButton("1111");
-//        b.setBounds(200,300,100,200);
-//        p.add(b);
+        JButton b = new JButton("Close");
+        b.setBounds(100,300,200,75);
+        p.add(b);
+
+        b.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                d.dispose();
+            }
+        });
 
         p.setVisible(true);
         d.add(p);
