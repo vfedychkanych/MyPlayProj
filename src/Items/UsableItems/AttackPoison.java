@@ -1,6 +1,4 @@
-package Items.UsableItem;
-
-import Items.Inventory;
+package Items.UsableItems;
 
 import java.util.ArrayList;
 
@@ -28,6 +26,17 @@ public class AttackPoison implements UsableItems {
     public double getToAtk() {
         return toAtk;
     }
+
+    @Override
+    public String toString() {
+        return "AttackPoison{" +
+                "name='" + name +
+                ", toAtk=" + toAtk +
+                ", coolDown=" + coolDown +
+                ", activeTime=" + activeTime +
+                '}';
+    }
+
     //--------------------------------------------------------------------------------------
 
     public void print(){

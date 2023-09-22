@@ -51,6 +51,18 @@ public class Hammer implements Weapon {
     public double getAttack() {
         return attack;
     }
+
+    @Override
+    public String toString() {
+        return "Hammer{" +
+                "name=" + name +
+                ", attack=" + attack +
+                ", lvl=" + lvl +
+                ", hp=" + hp +
+                ", attCof=" + attCof +
+                ", hpCof=" + hpCof +
+                '}';
+    }
     //--------------------------------------------------------------------------------------
     public void print(){
         ArrayList<String> res = new ArrayList<>();

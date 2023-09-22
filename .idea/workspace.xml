@@ -4,14 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="67a3b275-abd1-4c7b-8928-dd9e619a3667" name="Changes" comment="V: Armor">
-      <change afterPath="$PROJECT_DIR$/src/UI/GamePlay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/LoadGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/NewGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/GP/INVview/InventorySlot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/GP/INVview/InventoryView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/GP/INVview/ItemStats.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Items/Weapon/Baculus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Items/Weapon/Baculus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Items/Weapon/Hammer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Items/Weapon/Hammer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Items/Weapon/Sword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Items/Weapon/Sword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/GP/GamePlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/GP/GamePlay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/GP/GameZone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/GP/GameZone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/GP/InfoZone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/GP/InfoZone.java" afterDir="false" />
     </list>
+=======
+    <list default="true" id="67a3b275-abd1-4c7b-8928-dd9e619a3667" name="Changes" comment="V: Armor" />
+>>>>>>> b3b618dbbc0c5ed75d8e0d3748dd433083e1ba61
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,12 +40,8 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubProjectSettings">
-    <option name="branchProtectionPatterns">
-      <list>
-        <option value="master" />
-      </list>
-    </option>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Enemy/Enemy.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -52,9 +56,11 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;PlanTest&quot;
+    &quot;git-widget-placeholder&quot;: &quot;PlanTest&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RunManager">

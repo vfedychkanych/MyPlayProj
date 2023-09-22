@@ -1,14 +1,17 @@
 package Player;
+
 import Enemy.Enemy;
 import Items.Armor.Armor;
 import Items.Inventory;
-import Items.UsableItem.UsableItems;
-import Items.Weapon.Weapon;
+import Items.UsableItems.*;
+import Items.Weapon.*;
 import Race.Race;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
-public class Player<T extends Inventory>{
+public class Player {
     private String name;
     private Race race;
     private String raceName;
@@ -23,10 +26,10 @@ public class Player<T extends Inventory>{
     private double defense;
     private double defCof;
 
-    protected List<T> inventory = new ArrayList<>();
-    protected T inHands;
+    protected List<Inventory> inventory = new ArrayList<>();
+    protected Inventory inHands;
 
-    protected T activeArmor;
+    protected Inventory activeArmor;
 
     public Player(Race race, String name) {
         this.name = name;
@@ -45,6 +48,129 @@ public class Player<T extends Inventory>{
     public int getLevel() {
         return level;
     }
+
+    public List<Inventory> getInventory() {
+        return inventory;
+    }
+
+    public List<String> inventoryToStr(){
+        List<String> res = new ArrayList<>();
+        for (Inventory i : inventory) res.add(i.toString());
+        return res;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Race getRace() {
+        return race;
+    }
+
+    public String getRaceName() {
+        return raceName;
+    }
+
+    public double getHp() {
+        return hp;
+    }
+
+    public double getHpForLvl() {
+        return hpForLvl;
+    }
+
+    public double getAttackWithOutWeap() {
+        return attackWithOutWeap;
+    }
+
+    public double getDefenseWithOutWeap() {
+        return defenseWithOutWeap;
+    }
+
+    public double getAttack() {
+        return attack;
+    }
+
+    public double getAttCof() {
+        return attCof;
+    }
+
+    public double getDefense() {
+        return defense;
+    }
+
+    public double getDefCof() {
+        return defCof;
+    }
+
+    public Inventory getInHands() {
+        return inHands;
+    }
+
+    public Inventory getActiveArmor() {
+        return activeArmor;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setRace(Race race) {
+        this.race = race;
+    }
+
+    public void setRaceName(String raceName) {
+        this.raceName = raceName;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
+
+    public void setHp(double hp) {
+        this.hp = hp;
+    }
+
+    public void setHpForLvl(double hpForLvl) {
+        this.hpForLvl = hpForLvl;
+    }
+
+    public void setAttackWithOutWeap(double attackWithOutWeap) {
+        this.attackWithOutWeap = attackWithOutWeap;
+    }
+
+    public void setDefenseWithOutWeap(double defenseWithOutWeap) {
+        this.defenseWithOutWeap = defenseWithOutWeap;
+    }
+
+    public void setAttack(double attack) {
+        this.attack = attack;
+    }
+
+    public void setAttCof(double attCof) {
+        this.attCof = attCof;
+    }
+
+    public void setDefense(double defense) {
+        this.defense = defense;
+    }
+
+    public void setDefCof(double defCof) {
+        this.defCof = defCof;
+    }
+
+    public void setInventory(List<Inventory> inventory) {
+        this.inventory = inventory;
+    }
+
+    public void setInHands(Inventory inHands) {
+        this.inHands = inHands;
+    }
+
+    public void setActiveArmor(Inventory activeArmor) {
+        this.activeArmor = activeArmor;
+    }
+
     public void print(){
         System.out.println("======================================");
         System.out.println("Name : " + this.name);
@@ -60,15 +186,10 @@ public class Player<T extends Inventory>{
 
     }
 
-    public void addToInventory(T obj){
+    public void addToInventory(Inventory obj){
         inventory.add(obj);
     }
 
-    public void printInventory(){
-        for (Inventory i: inventory) {
-            i.print();
-        }
-    }
 
    public void takeInHands(int index){
        if(!inventory.isEmpty()) {
@@ -95,7 +216,7 @@ public class Player<T extends Inventory>{
             Scanner scanner = new Scanner(System.in);
             System.out.println("Підібрати це спорядження(y/n)?" + enemy.dropEnemyInventory(enemy));
             if (scanner.nextLine().equalsIgnoreCase("y")) {
-                this.inventory.add((T) enemy.dropEnemyInventory(enemy));
+                this.inventory.add((Inventory) enemy.dropEnemyInventory(enemy));
             } else{
                 System.out.println("Спорядження не підібрано");
             }
